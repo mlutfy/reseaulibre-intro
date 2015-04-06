@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Réseau Libre</title>
+
+    <meta name="description" content="Réseau Libre">
+    <meta name="author" content="">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="node_modules/reveal.js/css/theme/league.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+    <script>
+      document.write( '<link rel="stylesheet" href="node_modules/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+  </head>
+  <body>
+
+    <div class="reveal">
+
+      <!-- ==================================================================== -->
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <!-- ==================================================================== -->
+      <div class="slides">
+        <section data-state="cyan">
+          <h1>Réseau Libre</h1>
+          <h5>Réseau sans-fil communautaire | Infrastructure ouverte</h5>
+
+          <img src="img/NetworkTopology-Mesh.png" alt="NetTopoMesh"/ style="height: 250px">
+
+          <p>reseaulibre.ca</p>
+          <p>@ReseauLibre @PeerProd @MathieuLutfy</p>
+        </section>
+
+        <section>
+          <h3>Plan</h3>
+
+          <ul>
+            <li>L'histoire de l'Internet en 5 minutes</li>
+            <li>Motivations de Réseau libre</li>
+            <li>Réseau maillé</li>
+            <li>Gouvernance</li>
+            <li>Défis</li>
+          </ul>
+        </section>
+
+        <section>
+          <img src="img/latakia-nice.jpg" alt="" style="height: 650px;"/>
+        </section>
+
+        <section>
+          <img src="img/DSC_0295.JPG" alt=""/>
+        </section>
+
+        <section>
+          <img src="img/grace-win.jpg" alt=""/>
+        </section>
+
+<!-- TODO -->
+
+        <section>
+          <h3>Un réseau maillé?</h3>
+
+          <ul>
+            <li> independant    ✔   </li>
+            <li> local          ✔   </li>
+            <li> décentralisé   ✔   </li>
+            <li> non-commercial ✔   </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Pourquoi ?</h3>
+
+          <ul>
+            <li> Contrôle citoyen
+            <li> Services locaux
+            <li> Services d'urgences
+            <li> Sans censure
+            <li> Parce qu'on peut...
+          </ul>
+        </section>
+
+        <section>
+          <ul>
+            <li>~30 noeuds
+            <li>~20 bénévoles
+            <li>débuté en 2012
+          </ul>
+        </section>
+
+        <section>
+          <h3>Politiques</h3>
+          <ul>      
+            <li> consensus
+            <li> propositions par courriels
+            <li> logiciels libres
+          </ul> 
+        </section>
+
+        <section>
+          <h3>5 libertés</h3>
+          
+          <ul>
+            <li>Free Network Foundation
+              <ul>
+                <li> Participer</li>
+                <li> Où les données sont stockées</li>
+                <li> Avec qui partager</li>
+                <li> Sans interférence</li>
+                <li> Identité / anonymat</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Picopeer agreement</h3>
+
+          <ul>
+            <li> Transit libre
+            <li> Communication ouverte
+            <li> Aucune garantie
+            <li> Conditions d'utilisation
+          </ul>
+        </section>
+
+        <section>
+          <h3>Comment ça marche ?</h3>
+
+          <ul>
+            <li> réseaux sans fil "ad-hoc" 802.11n
+            <li> routage décentralisé avec Babel
+            <li> petites machines Ubiquity, TP-Link
+            <li> plein d'antennes sur les toits
+          </ul>
+        </section>
+
+
+
+        <section data-state="soothe">
+
+            <section>
+              <h1>IPv6 ?</h1>
+            </section>
+
+            <section>
+
+            
+            <ul>
+                <li>Adresses
+                <ul>
+                    <li> 128 bits séparés en 16 octets</li>
+                    <li> Octets groupés par 2</li>
+                    <li> Séparés par des ":"</li>
+                    <li> En hexadécimal</li>
+                    <li> Les "0" peuvent être consolidés (une fois)</li>
+                    <li> Supporte les adresses IPv4
+                        <ul>
+                            <li>  ::ffff:172.16.1.10</li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </section>
+
+            <section>
+<img src="img/flikr_wrosgen_arcencielmtl.jpg" alt=""/>
+
+<p>Source: http://www.flickr.com/photos/wrosgen/2614059100/</p>
+
+            </section>
+
+            <section>
+            
+                <ul>
+                    <li>Ces adresses sont toutes identiques:</li>
+                </ul>
+                    <code><pre>                    fd64:2c08:9fa7:0000:0001:0000:0000:0001
+                    fd64:2c08:9fa7::0001:0000:0000:0001
+                    fd64:2c08:9fa7::1:0:0:1
+                    fd64:2c08:9fa7:0:1::1</pre></code>
+
+            </section>
+
+            <section>
+            
+                <ul>
+                    <li>Préfixes IPv6:
+                    <ul>
+                        <li> fc00::/8</li>
+                        <li> 2002::/3</li>
+                        <li> 2607:f2c0:f00f:2900::/56</li>
+                        <li> 3fff:ffff::/32</li>
+                        <li> ::1/128</li>
+                    </ul>
+                    </li>
+                </ul>
+            </section>
+
+      <!-- ==================================================================== -->
+        <section data-state="yellow">
+            <section>
+            <img src="img/flikr_ampm_cat_in_box.jpg" alt=""/>
+            
+            <h1>Concrètement?</h1>
+            
+            <p>Source: http://www.flickr.com/photos/ampm/3481540472/</p>
+
+            </section>
+      </div>
+    </div>
+
+    <script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+    <script src="node_modules/reveal.js/js/reveal.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+          { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+          // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>
+

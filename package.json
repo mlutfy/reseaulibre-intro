@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "reveal.js": "git://github.com/hakimel/reveal.js#master"
+  },
+  "license": "GFDL 1.3+"
+}
