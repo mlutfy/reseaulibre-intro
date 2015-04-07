@@ -40,7 +40,7 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-        <section data-state="cyan">
+        <section>
           <h1>Réseau Libre</h1>
           <h5>Réseau sans-fil communautaire | Infrastructure ouverte</h5>
 
@@ -289,7 +289,7 @@
 
 
 
-        <section data-state="soothe">
+        <section>
 
             <section>
               <h1>IPv6 ?</h1>
@@ -351,7 +351,7 @@
             </section>
 
       <!-- ==================================================================== -->
-        <section data-state="yellow">
+        <section>
             <section>
             <img src="img/flikr_ampm_cat_in_box.jpg" alt=""/>
             
@@ -377,7 +377,11 @@
 				history: true,
 				center: true,
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+                // Parallax scrolling
+                parallaxBackgroundImage: 'img/internetmap.png',
+                parallaxBackgroundSize: '2196px 888px',
 
 				// Optional reveal.js plugins
 				dependencies: [
