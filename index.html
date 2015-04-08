@@ -41,10 +41,9 @@
         <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
 <!-- INTRO -->
-      <section>
         <section>
           <h1>Réseau Libre</h1>
-          <h5>Réseau sans-fil communautaire | Infrastructure ouverte</h5>
+          <h5 style="background: rgba(0,0,0,0.6);">Réseau sans-fil communautaire <br/> Infrastructure ouverte</h5>
 
           <img src="img/NetworkTopology-Mesh.png" alt="NetTopoMesh"/ style="height: 250px">
 
@@ -54,7 +53,7 @@
         </aside>
         </section>
 
-        <section data-autoslide="1000">
+        <section data-autoslide="1000" style="background: rgba(0,0,0,0.6);">
           <h2 class="fragment" data-autoslide="1000">Plan</h2>
 
           <ul>
@@ -82,9 +81,17 @@
         </section>
 
         <section>
+          <img src="img/500x-kit-bullet-m2.jpg" alt="" style="height: 650px;"/>
+        <aside class="notes">
+          Dans notre cas, nos routeurs, ou relais, sont ce genre d'appareils.
+          On peut voir le routeur comme tel, l'antenne grise, l'injecteur PoE.
+        </aside>
+        </section>
+
+        <section>
           <img src="img/latakia-nice.jpg" alt="" style="height: 650px;"/>
         <aside class="notes">
-          Dans notre cas, nos routeurs, ou relais, sont ce genre d'antennes.
+          On les installe généralement sur les toits.
         </aside>
         </section>
 
@@ -107,9 +114,7 @@
         </aside>
         </section>
 
-      </section>
 <!-- Histoire de L'internet -->
-      <section>
 
         <section>
           <h1>Courte histoire de l'Internet...</h1>
@@ -123,8 +128,6 @@
         <section>
           <h3>ARPANET 1970</h3>
           <img src="img/arpanet-1970.jpg" alt=""/>
-
-          <!-- <p>http://www.vox.com/a/internet-maps</p> -->
         <aside class="notes">
           Au tout début, il y avait ARPANET. Financé par les militaires. Juste quelques points reliés ensembles.
         </aside>
@@ -133,7 +136,6 @@
         <section>
           <h3>ARPANET 1973</h3>
           <img src="img/arpanet-1973.jpg" alt=""/>
-          <!-- <p>http://www.vox.com/a/internet-maps</p> -->
         <aside class="notes">
           Le réseau grossis petit à petit. Ici on a même des liens satellite avec Londres.
         </aside>
@@ -142,7 +144,6 @@
         <section>
           <h3>ARPANET 1982</h3>
           <img src="img/arpanet-1982.jpg" alt=""/>
-          <!-- <p>http://www.vox.com/a/internet-maps</p> -->
         <aside class="notes">
           Ça grandit...
         </aside>
@@ -151,7 +152,6 @@
         <section>
           <h3>1983 : TCP/IP remplace NCP</h3>
           <img src="img/tcpip.png" alt=""/>
-          <!-- <p>http://www.vox.com/a/internet-maps</p> -->
         <aside class="notes">
           Rendu à l'an 13, on remplace complètement le protocole de communication (NCP à TCP/IP).
           Significatif, parce qu'on est en train de faire un changement équivalent aujourd'hui avec IPv6.
@@ -169,18 +169,9 @@
 
         <section>
           <h3>1991 : WWW</h3>
-          <img src="img/Les_Horribles_Cernettes_in_1992.jpg" alt=" "style="height: 300px;"/>
-          <p>Mosaic 1 : 1993, Netscape 1 : 1995</p>
         <aside class="notes">
-            - Première image sur le web... ;P
-            - Environ 6000 réseaux connectés ensembles, 1/3 outremer.
         </aside>
         </section>
-
-        <!-- section -->
-          <!-- h3>NFSNET 1992</h3 -->
-          <!-- img src="img/NSFNET-1992.jpg" alt=""/ -->
-        <!-- /section -->
 
         <section >
           <img src="img/SchemaInternet.png" alt="" style="height: 620px;"/>
@@ -198,8 +189,7 @@
         </aside>
         </section>
 
-        <section>
-          <img src="img/NSFNet_logo.jpg" alt="" style="float: left;"/>
+        <section style="background: rgba(0,0,0,0.6);">
           <h3>1994 : privatisation de NSFNET</h3>
           <ul>
             <li>UUNet (Verizon/MCI), Sprint, AT&amp;T, Level3</li>
@@ -221,7 +211,7 @@
           <h3>1995 : https (SSL)</h3>
           <img src="img/SSL-seal.png" alt="" />
         <aside class="notes">
-           FIXME: enlever?
+           Commerce sur le web, paiement par carte de crédit.
         </aside>
         </section>
 
@@ -243,9 +233,7 @@
         </aside>
         </section>
 
-      </section>
 <!-- Motivation de réseau libre -->
-      <section>
 
         <section>
           <h1>Motivations de réseau libre</h1>
@@ -260,7 +248,14 @@
         <aside class="notes">
         </aside>
         </section>
-         
+
+        <section>
+          <h2>Computation universelle &amp; «DRM»</h2>
+          <img src="img/xkcd-drm.jpg" alt=""/>
+        <aside class="notes">
+        </aside>
+        </section>
+
         <section>
           <h2>Les logiciels libres</h2>
           <ul>
@@ -277,14 +272,7 @@
         <aside class="notes">
         </aside>
         </section>
-         
-        <section>
-          <h2>Computation universelle &amp; «DRM»</h2>
-          <img src="img/xkcd-drm.jpg" alt=""/>
-        <aside class="notes">
-        </aside>
-        </section>
-         
+
         <section>
             <h2>Culture de lecture &amp; d'écriture</h2>
             <p><b><br/>Culture du Remix<br/>VS <br/>Produit consommé<br/><br/></b></p>
@@ -293,14 +281,12 @@
            FIXME: [ML] je suggère d'enlever l'image.. trop distrayant. Personne va lire la slide, ni écouter ce que l'on dit.
         </aside>
         </section>
-         
+
         <section>
-          <img src="img/cryptokey.jpg" alt="" style="float: left; height: 300px; border: none;"/>
           <h2>Respect de la vie privée</h2>
           <p>(Sécurité / Anonymat)</p>
           <img src="img/cypherpunks.jpg" alt="" style="border: none;"/>
         <aside class="notes">
-          [ML] trop d'images.
         </aside>
         </section>
 
@@ -322,7 +308,7 @@
           </ul>
         <aside class="notes">
             - Mécanismes standardisés permettant un contrôle imprévu
-            - Alternatives plus horizontales et modernes permettent d'éviter certains problèmes (parfois en créant d'autres!)
+            - On manque d'adresses IP, censure DNS, 5 compagnies SSL, ...
         </aside>
         </section>
 
@@ -346,12 +332,13 @@
         </section>
 
         <section data-autoslide="1000">
-            <h3 data-autoslide="1000">Hackers (1990) <br/>vs<br/> Hackers (2000-2010)</h3>
+            <h3 data-autoslide="1000">Hackers (1990) <br/><span style="font-size: 75%;">vs</span><br/> Hackers (2000-2010)</h3>
           <ul>
             <li class="fragment" data-autoslide="1000">Réactions démesurées</li>
             <li class="fragment" data-autoslide="30000">Incompréhension et perception de perte de contrôle</li>
           </ul>
         <aside class="notes">
+          Nuit à l'exploration, l'apprentissage.
         </aside>
         </section>
 
@@ -370,15 +357,13 @@
         </aside>
         </section>
 
-      </section>
 <!-- Réseau Maillé -->
-      <section>
 
         <section>
           <h2>Un réseau maillé?</h2>
 
           <ul>
-            <li> independant    ✔   </li>
+            <li> indépendant    ✔   </li>
             <li> local          ✔   </li>
             <li> décentralisé   ✔   </li>
             <li> non-commercial ✔   </li>
@@ -420,13 +405,11 @@
         </aside>
         </section>
 
-      </section>
 <!-- Gouvernance -->
-      <section>
 
         <section>
           <h2>Politiques</h2>
-          <ul>      
+          <ul>
             <li> consensus
             <li> propositions par courriels
             <li> logiciels libres
@@ -466,9 +449,7 @@
         </aside>
         </section>
 
-      </section>
 <!-- Défis -->
-      <section>
 
         <section>
           <h2>Comment ça marche ?</h2>
@@ -556,7 +537,6 @@
             <h2>Questions?</h2>
             <!-- <p>Source: http://www.flickr.com/photos/ampm/3481540472/</p> -->
         </section>
-      </section>
 
       </div>
 <!-- = THE END ========================================================== -->
